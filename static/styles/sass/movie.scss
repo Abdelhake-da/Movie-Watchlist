@@ -1,0 +1,85 @@
+@import "./golbal/variable";
+.movie{
+    
+    @extend %full-height;
+    color: var(--color-color);
+    background-color: var(--color-bg);
+    .movies-list{
+        @extend %center;
+        height: fit-content;
+        position: relative;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                box-shadow: 2px 2px 15px 6px #000 ;
+                position: relative;
+                width: 268px;
+                height: 350px;
+                margin: 2rem;
+                border-radius: 1.1rem;
+                img{
+                    aspect-ratio: 2.68/3.5;
+                    object-fit: cover;
+                    border-radius: 1.1rem;
+                }
+                .description{
+                    padding: 6px 20px;
+                    padding-right: 5px;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        h2{
+                            cursor: pointer;
+                            white-space: nowrap;
+                            font-weight: bold;
+                            font-size: .9rem;
+                            margin-right: 6px;
+                            &:hover{
+                                transform: scale(1.1);
+                                
+                                text-shadow: 2px 2px 4px var(--c-tertiary);
+                            }
+                        }
+                        p{
+                            // width: 100%;
+                            font-size: .6rem;
+                        }
+                    }
+                    p{
+                        font-size:.6rem;
+                        padding-left: 10px;
+                    }
+                }
+                
+            }
+            .add-btn{
+                position: relative;
+                h1{
+                    width: 100%;
+                    height: 100%;
+                    // background-color: black;
+                    font-size: 10rem;
+                    text-align: center;
+                    position: absolute;
+                    padding: 60px 0;
+                    top: 0;
+                    color: black;
+                    text-shadow: 4px 4px 2px white;
+                }
+                cursor: pointer;
+                &:hover{
+                    h1{
+                        color: white;
+                        text-shadow: 4px 4px 2px black;
+                    }
+
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,44 @@
+@import "./golbal/variable";
+header {
+    height: 60px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %center;
+    .logo{
+      width: 80px;
+      &:hover{
+        transition-duration: 1s;
+        transform: scale(2);
+      }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+          color: var(--color-color);
+          font-size: 1.3rem;
+          @extend %clickable;
+          &:not(:last-of-type){
+              margin-right: 19px;
+          }
+          text-transform: capitalize;
+          button{
+            @extend %btn-img;
+            background-color: var(--bg-button);
+            box-shadow: 1px 1px 10px 1px var(--color-color);
+            padding: 5px ;
+            border-radius: 10px;
+            img{
+              width: 20px;
+            }
+            
+            &:hover{
+              transform: scale(1.1);
+            }
+          }
+        }
+    }
+}

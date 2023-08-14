@@ -1,0 +1,31 @@
+@import "./golbal/variable";
+
+body{
+    
+    background-color: var(--color-bg);
+    font-family: 'Poppins', sans-serif;
+    @extend %scrollbar;
+}
+
+.light {
+    --color-bg:  var(--c-light-bg);
+    --color-color: var(--c-dark-bg);
+    --bg-button : #d1d6463d;
+    --trs-col-dark: rgba(255, 255, 255, 0.94);
+    --trs-color: var(--trs-col-light)
+}
+.hide{
+    display: none;
+}
+.slide-up {
+    width: 100%;
+    position: relative;
+    bottom: 60px;
+    background-color: var(--trs-color);
+    color: var(--color-color);
+    transition: transform 1s;
+    transform: translateY(-50%);
+  }
+.height{
+    @extend %full-height;
+}

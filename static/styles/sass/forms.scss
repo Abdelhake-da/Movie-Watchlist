@@ -1,0 +1,10 @@
+@import "./golbal/variable";
+.forms{
+    height: 100vh;
+    @extend %full-height;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: var(--color-color);
+    background-color: var(--color-bg);
+}

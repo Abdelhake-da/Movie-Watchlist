@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/css/movie.css">
+    <link rel="stylesheet" href="./static/styles/css/reset.css">
+    <link rel="stylesheet" href="./static/styles/css/header.css">
+    <link rel="stylesheet" href="./static/styles/css/login.css">
+    <link rel="stylesheet" href="./static/styles/css/footer.css">
+    <link rel="stylesheet" href="./static/styles/css/edit.css">
+    <link rel="stylesheet" href="./static/styles/css/style.css">
+    <title>Document</title>
+</head>
+
+<body >
+   
+    <div class="movie height">
+        <header>
+            <img src="./static/images/logo.png" alt="logo" class="logo">
+            <ul class="header-list">
+                <li onclick="goTo('/listMovisPage.html')">movies</li>
+                <li onclick="goTo ('/index.html')">logout</li>
+                <li > <button class="btn-hover" onclick="changeMode(false)"><img src="./static/images/night-mode.png"
+                    alt="dark"></button> </li>
+                </ul>
+            </header>
+        <section class="movies-list">
+            <ul>
+                <li>
+                    <img src="./static/movies/hitman/img.webp" alt="">
+                    <div class="slide-up  description">
+                        <div>
+                            <h2 onclick="goTo('filmsDetial.html')">Hitman: Agent 47</h2>
+                            <p>(2007)</p>
+                        </div>
+
+                        <p class="tags">a film by Xavier Gens</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./static/movies/QuantumOfSolace/86676_poster_scale_480x640.jpg" alt="">
+                    <div class="slide-up description">
+                        <div>
+                            <h2 onclick="goTo('filmsDetial.html')" >Quantum Of Solace</h2>
+                            <p>(2008)</p>
+                        </div>
+
+                        <p class="tags">un film de Marc Forster</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./static/movies/Munich/59090_poster_scale_480x640.jpg" alt="">
+                    <div class="slide-up description">
+                        <div>
+                            <h2 onclick="goTo('filmsDetial.html')">Munich</h2>
+                            <p>(2005)</p>
+                        </div>
+
+                        <p class="tags">un film de Steven Spielberg</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./static/movies/LesSentiersDeLaPerdition/11103_poster_scale_480x640.jpg" alt="">
+                    <div class="slide-up description">
+                        <div>
+                            <h2 onclick="goTo('filmsDetial.html')">Les Sentiers de la perdition</h2>
+                            <p>(2002)</p>
+                        </div>
+
+                        <p class="tags">un film de Sam Mendes</p>
+                    </div>
+                </li>
+                <li class="add-btn" onclick="showEdit([])">
+                    <img src="./static/images/add.webp" alt="">
+                    <div>
+                        <h1>+</h1>
+                    </div>
+                </li>
+            </ul>
+            <div id="edit" class="edit hide">
+                <form action="" method="post">
+                    <p id="exit" onclick="exit()" class="exit">X</p>
+                    <span> <p>Title :</p> <input type="text"></span>
+                    <!-- input file or url -->
+                    <span> <p>Director :</p> <input type="text"></span>
+                    <span> <p>Year :</p> <input type="text"></span>
+                    <span> <p>cast :</p> <textarea name="cast"  cols="25" rows="6"></textarea></span>
+                    <span> <p>Series :</p> <textarea name="cast"  cols="25" rows="6"></textarea></span>
+                    <span> <p>tags :</p> <textarea name="cast"  cols="25" rows="6"></textarea></span>
+                    <span> <p>description :</p> <textarea name="cast"  cols="25" rows="6"></textarea></span>
+                    <span> <p>video link :</p>  <input type="text"></span>
+                    <button>submit</button>
+                </form>
+            </div>
+
+        </section>
+        <footer>
+            <p>copyright ©2022. Movies Watchlist. All rights reserved</p>
+        </footer>
+    </div>
+    <script src="./static/script/modes.js"></script>
+    <script src="./static/script/index.js"></script>
+    
+</body>
+
+</html>

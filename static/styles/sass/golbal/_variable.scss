@@ -1,0 +1,71 @@
+:root {
+    --c-light-bg: #EDF2EF;
+    --c-dark-bg: #212738;
+    --c-primery: #57C4E5;
+    --c-secundary: #D1D646;
+    --c-tertiary: #F97068;
+    --trs-col-dark: hsla(224, 26%, 17%, 0.89);
+    --trs-col-light: hsla(144, 16%, 94%, 0.89);
+
+    --color-bg:var(--c-dark-bg);
+    --color-color: var(--c-light-bg);
+    --bg-button: #57c4e53b;
+    --trs-color: var(--trs-col-dark);
+    --shadow-col: #F97068;
+    --background-image: url();
+}
+%center {
+    margin: .8rem auto;
+    width: min(90%, 1000px);
+}
+
+%btn-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+
+%clickable {
+    transition-duration: 500ms;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.3);
+        color: var(--c-primery);
+    }
+}
+
+%full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+%scrollbar {
+    
+    &::-webkit-scrollbar-track {
+        /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9); */
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        /* background-color: #F5F5F5; */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--color-color);
+        background-image: -webkit-linear-gradient(90deg,
+                transparent,
+                var(--color-bg) 50%,
+                transparent,
+                transparent);
+       
+        
+    }
+}

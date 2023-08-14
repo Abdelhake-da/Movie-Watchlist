@@ -1,0 +1,77 @@
+:root {
+  --c-light-bg: #EDF2EF;
+  --c-dark-bg: #212738;
+  --c-primery: #57C4E5;
+  --c-secundary: #D1D646;
+  --c-tertiary: #F97068;
+  --trs-col-dark: hsla(224, 26%, 17%, 0.89);
+  --trs-col-light: hsla(144, 16%, 94%, 0.89);
+  --color-bg:var(--c-dark-bg);
+  --color-color: var(--c-light-bg);
+  --bg-button: #57c4e53b;
+  --trs-color: var(--trs-col-dark);
+  --shadow-col: #F97068;
+  --background-image: url();
+}
+
+header {
+  margin: 0.8rem auto;
+  width: min(90%, 1000px);
+}
+
+header ul li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+}
+
+header ul li {
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+header ul li:hover {
+  transform: scale(1.3);
+  color: var(--c-primery);
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 80px;
+}
+header .logo:hover {
+  transition-duration: 1s;
+  transform: scale(2);
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul li {
+  color: var(--color-color);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+header ul li:not(:last-of-type) {
+  margin-right: 19px;
+}
+header ul li button {
+  background-color: var(--bg-button);
+  box-shadow: 1px 1px 10px 1px var(--color-color);
+  padding: 5px;
+  border-radius: 10px;
+}
+header ul li button img {
+  width: 20px;
+}
+header ul li button:hover {
+  transform: scale(1.1);
+}

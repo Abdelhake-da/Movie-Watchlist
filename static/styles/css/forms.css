@@ -1,0 +1,30 @@
+:root {
+  --c-light-bg: #EDF2EF;
+  --c-dark-bg: #212738;
+  --c-primery: #57C4E5;
+  --c-secundary: #D1D646;
+  --c-tertiary: #F97068;
+  --trs-col-dark: hsla(224, 26%, 17%, 0.89);
+  --trs-col-light: hsla(144, 16%, 94%, 0.89);
+  --color-bg:var(--c-dark-bg);
+  --color-color: var(--c-light-bg);
+  --bg-button: #57c4e53b;
+  --trs-color: var(--trs-col-dark);
+  --shadow-col: #F97068;
+  --background-image: url();
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.forms {
+  height: 100vh;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-color);
+  background-color: var(--color-bg);
+}

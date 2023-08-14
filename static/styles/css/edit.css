@@ -1,0 +1,112 @@
+:root {
+  --c-light-bg: #EDF2EF;
+  --c-dark-bg: #212738;
+  --c-primery: #57C4E5;
+  --c-secundary: #D1D646;
+  --c-tertiary: #F97068;
+  --trs-col-dark: hsla(224, 26%, 17%, 0.89);
+  --trs-col-light: hsla(144, 16%, 94%, 0.89);
+  --color-bg:var(--c-dark-bg);
+  --color-color: var(--c-light-bg);
+  --bg-button: #57c4e53b;
+  --trs-color: var(--trs-col-dark);
+  --shadow-col: #F97068;
+  --background-image: url();
+}
+
+.edit form::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9); */
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.edit form::-webkit-scrollbar {
+  width: 5px;
+  /* background-color: #F5F5F5; */
+}
+.edit form::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-color);
+  background-image: -webkit-linear-gradient(90deg, transparent, var(--color-bg) 50%, transparent, transparent);
+}
+
+.exit {
+  color: var(--color-bg);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 1px solid var(--color-bg);
+}
+.exit:hover {
+  color: red;
+  background-color: var(--color-bg);
+  border: 1px solid red;
+}
+
+.edit {
+  width: 100%;
+  position: absolute;
+  top: -60px;
+}
+.edit form {
+  border: 3px solid black;
+  position: relative;
+  padding-top: 43rem;
+  overflow-y: scroll;
+  max-height: 300px;
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--trs-color);
+  border-radius: 15px 0 0 15px;
+}
+.edit form span {
+  padding: 0.6rem 1rem;
+}
+.edit form span p {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: var(--color-color);
+}
+.edit form span input, .edit form span textarea, .edit form span p {
+  margin: auto;
+  width: 300px;
+}
+.edit form span textarea, .edit form span input {
+  border: 2px solid var(--color-color);
+  border-radius: 10px;
+  background-color: rgba(128, 255, 0, 0);
+  padding: 0.4rem 0.6rem;
+  color: var(--color-color);
+}
+.edit form span textarea:focus, .edit form span input:focus {
+  transform: scale(1.1);
+  outline: none;
+}
+.edit form button {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 0.4rem 1.4rem;
+  border-radius: 15px;
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-color);
+  color: var(--color-color);
+}
+.edit form button:hover {
+  color: var(--color-bg);
+  background-color: #fff;
+  border: 2px solid var(--color-bg);
+}

@@ -1,0 +1,84 @@
+@import "./golbal/variable";
+.exit{
+    color: var(--color-bg);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid var(--color-bg);
+    &:hover{
+        color: red;
+        background-color: var(--color-bg);
+        border: 1px solid red;
+    }
+}
+.edit{
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    form{
+        border: 3px solid black;
+        position: relative;
+        padding-top:43rem;
+        overflow-y: scroll;
+        max-height: 300px;
+        @extend %scrollbar;
+        max-width: 350px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--trs-color);
+        border-radius: 15px 0 0 15px;
+        span{
+            padding: .6rem 1rem;
+            p{
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+                color: var(--color-color);
+            }
+            input,textarea,p{
+                margin: auto;
+                width: 300px;
+            }
+            textarea,input{
+                border: 2px solid var(--color-color);
+                border-radius: 10px;
+                background-color:rgba(128, 255, 0, 0);
+                padding: .4rem .6rem;
+                color: var(--color-color);
+                &:focus{
+                    transform: scale(1.1);
+                    outline: none;
+                }
+            }
+        
+        }
+        button{
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 80px;
+            padding: .4rem 1.4rem;
+            border-radius: 15px;
+            background-color: var(--color-bg);
+            border: 2px solid var(--color-color);
+            color: var(--color-color);
+            &:hover{
+                color: var(--color-bg);
+                background-color: #fff;
+                border: 2px solid var(--color-bg);
+            }
+        }
+    }
+   
+}

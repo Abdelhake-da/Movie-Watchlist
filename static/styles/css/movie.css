@@ -1,0 +1,102 @@
+:root {
+  --c-light-bg: #EDF2EF;
+  --c-dark-bg: #212738;
+  --c-primery: #57C4E5;
+  --c-secundary: #D1D646;
+  --c-tertiary: #F97068;
+  --trs-col-dark: hsla(224, 26%, 17%, 0.89);
+  --trs-col-light: hsla(144, 16%, 94%, 0.89);
+  --color-bg:var(--c-dark-bg);
+  --color-color: var(--c-light-bg);
+  --bg-button: #57c4e53b;
+  --trs-color: var(--trs-col-dark);
+  --shadow-col: #F97068;
+  --background-image: url();
+}
+
+.movie .movies-list {
+  margin: 0.8rem auto;
+  width: min(90%, 1000px);
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie {
+  color: var(--color-color);
+  background-color: var(--color-bg);
+}
+.movie .movies-list {
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+.movie .movies-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie .movies-list ul li {
+  box-shadow: 2px 2px 15px 6px #000;
+  position: relative;
+  width: 268px;
+  height: 350px;
+  margin: 2rem;
+  border-radius: 1.1rem;
+}
+.movie .movies-list ul li img {
+  aspect-ratio: 2.68/3.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.1rem;
+}
+.movie .movies-list ul li .description {
+  padding: 6px 20px;
+  padding-right: 5px;
+}
+.movie .movies-list ul li .description div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.movie .movies-list ul li .description div h2 {
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-right: 6px;
+}
+.movie .movies-list ul li .description div h2:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 4px var(--c-tertiary);
+}
+.movie .movies-list ul li .description div p {
+  font-size: 0.6rem;
+}
+.movie .movies-list ul li .description p {
+  font-size: 0.6rem;
+  padding-left: 10px;
+}
+.movie .movies-list ul .add-btn {
+  position: relative;
+  cursor: pointer;
+}
+.movie .movies-list ul .add-btn h1 {
+  width: 100%;
+  height: 100%;
+  font-size: 10rem;
+  text-align: center;
+  position: absolute;
+  padding: 60px 0;
+  top: 0;
+  color: black;
+  text-shadow: 4px 4px 2px white;
+}
+.movie .movies-list ul .add-btn:hover h1 {
+  color: white;
+  text-shadow: 4px 4px 2px black;
+}

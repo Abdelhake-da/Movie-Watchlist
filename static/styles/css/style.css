@@ -1,0 +1,63 @@
+:root {
+  --c-light-bg: #EDF2EF;
+  --c-dark-bg: #212738;
+  --c-primery: #57C4E5;
+  --c-secundary: #D1D646;
+  --c-tertiary: #F97068;
+  --trs-col-dark: hsla(224, 26%, 17%, 0.89);
+  --trs-col-light: hsla(144, 16%, 94%, 0.89);
+  --color-bg:var(--c-dark-bg);
+  --color-color: var(--c-light-bg);
+  --bg-button: #57c4e53b;
+  --trs-color: var(--trs-col-dark);
+  --shadow-col: #F97068;
+  --background-image: url();
+}
+
+.height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9); */
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+body::-webkit-scrollbar {
+  width: 5px;
+  /* background-color: #F5F5F5; */
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-color);
+  background-image: -webkit-linear-gradient(90deg, transparent, var(--color-bg) 50%, transparent, transparent);
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: "Poppins", sans-serif;
+}
+
+.light {
+  --color-bg: var(--c-light-bg);
+  --color-color: var(--c-dark-bg);
+  --bg-button: #d1d6463d;
+  --trs-col-dark: rgba(255, 255, 255, 0.94);
+  --trs-color: var(--trs-col-light) ;
+}
+
+.hide {
+  display: none;
+}
+
+.slide-up {
+  width: 100%;
+  position: relative;
+  bottom: 60px;
+  background-color: var(--trs-color);
+  color: var(--color-color);
+  transition: transform 1s;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/css/reset.css">
+    <link rel="stylesheet" href="./static/styles/css/forms.css">
+    <link rel="stylesheet" href="./static/styles/css/header.css">
+    <link rel="stylesheet" href="./static/styles/css/login.css">
+    <link rel="stylesheet" href="./static/styles/css/footer.css">
+    <link rel="stylesheet" href="./static/styles/css/style.css">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div class="forms" id="forms">
+        <header>
+            <img src="./static/images/logo.png" alt="logo" class="logo">
+            <ul class="header-list">
+                <li onclick="showLogin()">Login</li>
+                <li onclick="showSignup()">Sign up</li>
+                <li> <button class="btn-hover" onclick="changeMode()"><img src="./static/images/night-mode.png" alt="dark"></button> </li>
+            </ul>
+        </header>
+      
+        <section class="body-signup hide">
+            <form action="">
+                <label for="">
+                    <p>user name</p>
+                    <input type="text" name="name" id="">
+                </label>
+                <label for="">
+                    <p>email</p>
+                    <input type="email" name="name" id="">
+                </label>
+                <label for="">
+                    <p>password</p>
+                    <input type="password" name="password" id="">
+                </label>
+                <label for="">
+                    <p>confirm password</p>
+                    <input type="password" name="password" id="">
+                </label>
+                <label for="">
+                    <p>i have account? <a onclick="showLogin()">go to login</a></p>
+                </label>
+                <button>signup</button>
+            </form>
+        </section>
+        <section class="body-login">
+            <form action="">
+                <label for="">
+                    <p>user name</p>
+                    <input type="text" name="name" id="">
+                </label>
+                <label for="">
+                    <p>password</p>
+                    <input type="text" name="password" id="">
+                </label>
+                <label for="">
+                    <p>don't have account? <a onclick="showSignup()">register here</a></p>
+                </label>
+                <button>login</button>
+            </form>
+        </section>
+        <footer >
+           <p>copyright ©2022. Movies Watchlist. All rights reserved</p> 
+        </footer>
+    </div>
+    <script src="./static/script/modes.js"></script>
+    <script src="./static/script/index.js"></script>
+</body>
+
+</html>

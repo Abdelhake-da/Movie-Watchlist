@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/css/filmsDetial.css">
+    <link rel="stylesheet" href="./static/styles/css/reset.css">
+    <link rel="stylesheet" href="./static/styles/css/header.css">
+    <link rel="stylesheet" href="./static/styles/css/footer.css">
+    <link rel="stylesheet" href="./static/styles/css/style.css">
+    <link rel="stylesheet" href="./static/styles/css/edit.css">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div class="movie height">
+        <header>
+            <img src="./static/images/logo.png" alt="logo" class="logo">
+            <ul class="header-list">
+                <li onclick="goTo('/listMovisPage.html')">movies</li>
+                <li onclick="goTo('/index.html')">logout</li>
+                <li> <button class="btn-hover" onclick="changeMode(false)"><img src="./static/images/night-mode.png"
+                            alt="dark"></button> </li>
+            </ul>
+        </header>
+        <section class="movie-dit">
+            <div class="title">
+                <div class="tdr-t">
+                    <div class="tdr">
+                        <h2>Hitman</h2>
+                        <p>(2007)</p>
+                        <div class="review">
+                            <img onclick="rating(1)" class="selected-star" src="./static/images/active_star.png" alt="">
+                            <img onclick="rating(2)" class="star" src="./static/images/star_white.png" alt="">
+                            <img onclick="rating(3)" class="star" src="./static/images/star_white.png" alt="">
+                            <img onclick="rating(4)" class="star" src="./static/images/star_white.png" alt="">
+                            <img onclick="rating(5)" class="star" src="./static/images/star_white.png" alt="">
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <p>#action</p>
+                    </div>
+                </div>
+                <img id="edit-logo" onclick="showEdit()" src="./static/images/white_edit.png" alt="" class="edit-logo">
+            </div>
+            <!-- style="background-image: url(./static/movies/hitman/286601_backdrop_scale_1280xauto.jpg);" -->
+            <div class="vdc">
+                <div class="movie-vedio">
+                    <iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x2lby2l">
+                    </iframe>
+                </div>
+                <p class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum sit esse, ex, assumenda modi
+                    excepturi
+                    ad quos reiciendis voluptate officiis voluptates atque nobis nesciunt exercitationem quis omnis
+                    accusamus ut?
+                </p>
+                <div class="casting">
+                    <ul>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="edit" class="edit hide">
+                <form action="" method="post">
+                    <p id="exit" onclick="exit()" class="exit">X</p>
+                    <span> <p>Title :</p> <input type="text"></span>
+                    <!-- input file or url -->
+                    <span> <p>Director :</p> <input type="text"></span>
+                    <span> <p>Year :</p> <input type="text"></span>
+                    <span> <p>cast :</p> <textarea name="cast"  cols="25" rows="6"></textarea></span>
+                    <span> <p>Series :</p> <textarea name="cast"  cols="25" rows="6"></textarea></span>
+                    <span> <p>tags :</p> <textarea name="cast"  cols="25" rows="6"></textarea></span>
+                    <span> <p>description :</p> <textarea name="cast"  cols="25" rows="6"></textarea></span>
+                    <span> <p>video link :</p>  <input type="text"></span>
+                    <button>submit</button>
+                </form>
+            </div>
+
+        </section>
+        <footer>
+            <p>copyright ©2022. Movies Watchlist. All rights reserved</p>
+        </footer>
+    </div>
+    <script src="./static/script/modes.js"></script>
+    <script src="./static/script/index.js"></script>
+
+</body>
+
+</html>
